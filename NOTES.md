@@ -6,10 +6,6 @@ Answer to the first question: 2.3259899543172153
 
 ## 2. exercise
 
-The app is available on the following url: https://herbbearingbeaver.fly.dev/
-
-On the first load the app will most likely be cold starting, so it might take a bit of a time for it to actually show.
-
 Regarding the UI/UX:
 - as mentioned there should be a loader
 - the message shown could show a bit more information (e.g.: what exact point was clicked, what point does the data belong to)
@@ -66,6 +62,6 @@ I am opening the file for every request. This could be a problem in a multi-user
 
 ## Describe if you used AI, and if so, how/for what?
 
-- As I'm not very experienced with Python I used AI to advise me on structuring the project, so it's somewhat idiomatic to how a Flask project would look like.
+- As I'm not very experienced with Python I used AI to advise me on structuring the project, so it's somewhat idiomatic to how a Flask project would look like. It also helped me with setting up a python environment.
 - I don't have much experience with xarray, so I used AI to help me understand what are dimensions, values, how stuff like "nearest" work, etc. This saved me a lot of time because I didn't have to dig through all the documentation for a simple task.
 - I noticed that when using Leaflet and not having bound on the map, the coordinates went out of the bounds of the data and caused issues. So I used AI to help me figure out how to normalize the coordinates into the bounds.
