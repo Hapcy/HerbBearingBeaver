@@ -13,8 +13,8 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 map.on("click", async (e) => {
   const url = new URL("/waves", window.location.origin);
   const params = url.searchParams;
-  params.append("lat", e.latlng.lat);
-  params.append("lon", e.latlng.lng);
+  params.append("lat", e.latlng.wrap().lat);
+  params.append("lon", e.latlng.wrap().lng);
 
   let content = "";
   const response = await fetch(new Request(url));
