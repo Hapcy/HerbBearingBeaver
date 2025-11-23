@@ -1,16 +1,6 @@
-from flask import Flask, render_template, jsonify
+from app import create_app
 
-app = Flask(__name__)
-
-# Serve HTML page
-@app.route("/")
-def home():
-    return render_template("index.html")
-
-# REST API endpoint
-@app.route("/api/message")
-def api_message():
-    return jsonify({"message": "Hello from the API!"})
+app = create_app();
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=3000)
